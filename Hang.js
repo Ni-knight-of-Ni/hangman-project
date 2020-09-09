@@ -1,4 +1,30 @@
+
+
+
+
+//refernce win loss
+
+
+
+
+
 window.onload = function () {
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCAuZbS2mWrZRunYeWYWO1GBV0wqbbgTz0",
+    authDomain: "jbnni-51f87.firebaseio.com/",
+    databaseURL: "https://jbnni-51f87.firebaseio.com/",
+    storageBucket: "/jbnni-51f87.appspot.com",
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+ var refWinsLoss = firebase.database().ref('winlossxxx')
+
+
+
 
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
         'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
@@ -13,6 +39,10 @@ window.onload = function () {
   var lives ;             // Lives
   var counter ;           // Count correct geusses
   var space;              // Number of spaces in word '-'
+
+
+  //firebase variables
+
 
   // Get elements
   var showLives = document.getElementById("mylives");
@@ -79,6 +109,7 @@ window.onload = function () {
       showLives.innerHTML = "Game Over";
 
       //send to firebase - lost -> start moter
+      refWinsLoss.push(0)
 
     }
     for (var i = 0; i < geusses.length; i++) {
@@ -86,6 +117,7 @@ window.onload = function () {
         showLives.innerHTML = "You Win!";
 
         //send to firebase you win
+        refWinsLoss.push(1)
       }
     }
   }
@@ -146,7 +178,6 @@ window.onload = function () {
     result();
     comments();
     selectCat();
-    canvas();
   }
 
   play();
