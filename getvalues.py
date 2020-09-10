@@ -23,8 +23,10 @@ while True:
             MRKloss =int(myGetResults[keyID])
             MRKeyID = myGetResults[keyID]
         
-        microbitdata = str(myGetResults[keyID])
-        print(microbitdata)
-        
+    microbitdata = str(myGetResults[keyID])
+    print(microbitdata)
+    ser.write(microbitdata.encode('UTF-8') + b"\n")
+    
+    time.sleep(5)
 
 ser.close 
