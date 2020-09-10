@@ -1,4 +1,4 @@
-/* Variabes */
+/* Variabes */  
 $orange: #ffa600;
 $green: #c1d72e;
 $blue: #82d2e5;
@@ -6,7 +6,7 @@ $grey:#f3f3f3;
 $white: #fff;
 $base-color:$green ;
 
-/* Mixin's */
+/* Mixin's */ 
 
 @mixin transition {
   -webkit-transition: all 0.5s ease-in-out;
@@ -42,20 +42,20 @@ $base-color:$green ;
 
 @mixin opacity {
   opacity:0.4;
-  filter:alpha(opacity=40);
+  filter:alpha(opacity=40); 
   @include fade;
 }
 
 @mixin corners ($radius) {
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
-  border-radius: $radius;
-  -khtml-border-radius: $radius;
+  border-radius: $radius; 
+  -khtml-border-radius: $radius; 
 }
 
 body {
   background:$blue;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   color:$white;
   height:100%;
   text-align:center;
@@ -69,11 +69,7 @@ body {
 }
 
 
-canvas{
-  color:$white;
-  border: $white dashed 2px;
-  padding:15px;
-}
+
 
 h1, h2, h3 {
 	font-family: 'Roboto', sans-serif;
@@ -113,7 +109,7 @@ p{
   cursor:pointer;
   @include corners(5px);
   border: solid 1px $white;
-
+    
     &:hover{
       background:$blue;
       border: solid 1px $white;
@@ -140,7 +136,7 @@ p{
 .active {
   @include opacity;
   cursor:default;
-
+    
   &:hover{
       @include fade;
       @include opacity;
@@ -165,7 +161,7 @@ button{
   width:180px;
   margin: 10px;
   outline: none;
-
+  
     &:hover{
       @include transition;
       background:$white;
@@ -185,5 +181,3 @@ button{
   padding:0 0 0 25px;
 }
   }
-/* Scss Document */
-

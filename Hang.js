@@ -32,7 +32,6 @@ window.onload = function () {
 
   var categories;         // Array of topics
   var chosenCategory;     // Selected catagory
-  var getHint ;          // Word getHint
   var word ;              // Selected word
   var guess ;             // Geuss
   var geusses = [ ];      // Stored geusses
@@ -47,8 +46,7 @@ window.onload = function () {
   // Get elements
   var showLives = document.getElementById("mylives");
   var showCatagory = document.getElementById("scatagory");
-  var getHint = document.getElementById("hint");
-  var showClue = document.getElementById("clue");
+
 
 
 
@@ -121,16 +119,6 @@ window.onload = function () {
       }
     }
   }
-
-      // Animate man
-  var animate = function () {
-    var drawMe = lives ;
-    drawArray[drawMe]();
-  }
-
-
-   // Hangman
-
 
 
   // OnClick Function
