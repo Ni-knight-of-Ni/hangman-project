@@ -160,7 +160,7 @@ window.onload = function () {
     buttons();
 
     geusses = [ ];
-    lives = 1;
+    lives = 10;
     counter = 0;
     space = 0;
     result();
@@ -177,7 +177,6 @@ window.onload = function () {
   document.getElementById('reset').onclick = function() {
     correct.parentNode.removeChild(correct);
     letters.parentNode.removeChild(letters);
-    showClue.innerHTML = "";
     context.clearRect(0, 0, 400, 400);
     play();
   }
