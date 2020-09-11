@@ -1,0 +1,31 @@
+*{box-sizing: border-box;
+  font-family: FontAwesome;
+  text-align:center;
+}
+
+.wrapper {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width:300px;
+  margin:50px auto 100px auto;
+
+}
+
+.btn {
+  font-size:70px;
+  padding:20px 30px 20px 30px;
+}
+
+
+#contactForm1{
+  grid-column: 2 / 3;
+}
+#contactForm2{
+  grid-column: 1 / 2;
+}
+ #contactForm3{
+  grid-column: 3 / 4;
+}
+#contactForm4{
+  grid-column: 2 / 3;
+}

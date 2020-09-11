@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snake</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class=wrapper>
+        <form id="contactForm1">
+            <button class="btn btn-primary button" type="submit" id="Up">
+              <span class="fas fa-arrow-up"></span>
+            </button>
+              </form>
+
+              <form id="contactForm2">
+              <button class="btn btn-primary button" type="submit" id="Left">
+                <span class="fas fa-arrow-left"></span>
+              </button>
+            </form>
+
+
+            <form id="contactForm3">
+            <button class="btn btn-primary button" type="submit" id="Right">
+              <span class="fas fa-arrow-right"></span>
+            </button>
+          </form>
+
+            <form id="contactForm4">
+            <button class="btn btn-primary button" type="submit" id="Down">
+              <span class="fas fa-arrow-down"></span>
+            </button>
+          </form>
+
+</div>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+   <script>
+     // Your web app's Firebase configuration
+     var firebaseConfig = {
+       apiKey: "AIzaSyDGvIh0j65Rm839wsFdVM9ePBhoqz8U2Os",
+       authDomain: "snake-f2681.firebaseapp.com",
+       databaseURL: "https://snake-f2681.firebaseio.com",
+       projectId: "snake-f2681",
+       storageBucket: "snake-f2681.appspot.com",
+       messagingSenderId: "585028498730",
+       appId: "1:585028498730:web:2905fc1d05d2821b641a53"
+     };
+     // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+   </script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
